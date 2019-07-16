@@ -129,7 +129,7 @@ models:
                   name: url
                   label: URL
                   widget: url
-                  description: 'the URL (must reference a markdown file such as: generic.md, or feugiat.md ...), or section ID (like #intro or #one ...) of the sidebar entry'
+                  description: 'the URL (/generic, or /feugiat ...), or section ID (like #intro or #one ...) of the sidebar entry'
                 - type: boolean
                   name: is_primary
                   label: Is Primary

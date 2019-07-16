@@ -58,7 +58,7 @@ sections:
         icon: fa-diamond
     actions:
       - label: Learn more
-        url: generic.md
+        url: "/generic"
         is_scrolly: false
         is_primary: false
     component: "features.html"

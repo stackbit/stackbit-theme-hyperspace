@@ -4,7 +4,7 @@
         <nav>
             <ul>
                 {% for item in page.params.sidebar.entries %}
-                    <li><a {% if item.is_primary %}id="first_link" {% endif %}href="{% if item.url | starts_with('#') %}{{ item.url }}{% else %}{{ item.url | link | relative_url }}{% endif %}">{{ item.title }}</a></li>
+                    <li><a {% if item.is_primary %}id="first_link" {% endif %}href="{% if item.url | starts_with('#') %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}">{{ item.title }}</a></li>
                 {% endfor %}
             </ul>
         </nav>
