@@ -129,12 +129,17 @@ models:
                   name: url
                   label: URL
                   widget: url
-                  description: 'the URL (/generic, or /feugiat ...), or section ID (like #intro or #one ...) of the sidebar entry'
+                  description: >-
+                    the URL (/generic, or /feugiat ...), or section ID (like
+                    #intro or #one ...) of the sidebar entry
                 - type: boolean
                   name: is_primary
                   label: Is Primary
                   default: false
-                  description: 'Underlines the Sidebar entry initially. note: only one entry can be highlighted at a time, so the first entry with this set will be selected'
+                  description: >-
+                    Underlines the Sidebar entry initially. note: only one entry
+                    can be highlighted at a time, so the first entry with this
+                    set will be selected
       - type: list
         name: sections
         label: Sections
@@ -428,5 +433,7 @@ models:
 stackbit_banner:
   show_banner: true
   name: Hyperspace
-  create_url: 'https://app.stackbit.com/wizard?theme=hyperspace'
+  create_url: 'https://app.stackbit.com/create?theme=hyperspace'
   github_url: 'https://github.com/stackbithq/stackbit-theme-hyperspace'
+pagesDir: content
+staticDir: static
