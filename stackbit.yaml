@@ -1,5 +1,12 @@
-stackbitVersion: ~0.2.34
+stackbitVersion: ~0.2.0
+ssgName: unibit
+buildCommand: unibit build
+publishDir: output
+staticDir: static
 uploadDir: images
+dataDir: data
+pagesDir: content
+pageLayoutKey: layout
 metadata:
   title: Hyperspace
   description: a multi-page theme with scroll-animated home sections
@@ -435,5 +442,3 @@ stackbit_banner:
   name: Hyperspace
   create_url: 'https://app.stackbit.com/create?theme=hyperspace'
   github_url: 'https://github.com/stackbithq/stackbit-theme-hyperspace'
-pagesDir: content
-staticDir: static
