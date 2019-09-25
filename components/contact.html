@@ -5,7 +5,10 @@
         {{ include_dict.section.text | markdownify }}
         <div class="split style1">
             <section>
-                <form method="post" action="#">
+                <form name="contactForm" method="post" action="#" netlify-honeypot="bot-field" data-netlify="true">
+                    <div class="screen-reader-text">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </div>
                     <div class="fields">
                         <div class="field half">
                             <label for="name">Name</label>
@@ -20,6 +23,7 @@
                             <textarea name="message" id="message" rows="5"></textarea>
                         </div>
                     </div>
+                    <input type="hidden" name="form-name" value="contactForm" />
                     <ul class="actions">
                         <li><a href="" class="button submit">Send Message</a></li>
                     </ul>
